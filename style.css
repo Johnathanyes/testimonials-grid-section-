@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+    --paragraph: hsla(0, 0%, 100%, 0.5);
+    --Verified-Graduate: hsla(0, 0%, 100%, 0.7);
+    --paragraph-gray: hsla(217, 19%, 35%, 0.7);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Light-grayish-blue);
+}
+
+main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 290px 290px 290px 290px;
+    grid-template-rows: 340px 340px;
+    justify-content: center;
+    align-content: center;
+    row-gap: 25px;
+    column-gap: 35px;
+    width: 100%;
+}
+
+img {
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255, .5);
+    height: 50px;
+    width: 50px;
+    display: inline;
+}
+
+.card-patrick img {
+    border: 2px solid hsla(263, 55%, 52%);
+}
+
+/* gridding */
+
+section {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.card-daniel {
+    grid-column: 1 / span 2;
+    background-color: var(--Moderate-violet);
+}
+
+.card-jonathan {
+    grid-column: 3 / 3;
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+.card-jeanette {
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+    background-color: var(--White);
+}
+
+.card-patrick {
+    grid-row: 2 / 2;
+    grid-column: 2 / 4;
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+.card-kira {
+    grid-row: 1 / 3;
+    grid-column: 4 / 4;
+    background-color: var(--White);
+}
+
+.card-daniel {
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+    background-position: 85% 0;
+}
+
+/* colors and fonts*/
+
+h1 {
+    font-family: Barlow Semi Condensed;
+    color: var(--White);
+}
+
+h3 {
+    font-family: Barlow Semi Condensed;
+    color: var(--White);
+}
+
+h4 {
+    font-family: Barlow Semi Condensed;
+    color: var(--Verified-Graduate);
+    font-weight: 500;
+}
+
+p {
+    font-family: Barlow Semi Condensed;
+    color: var(--paragraph);
+}
+
+.card-jeanette h1 {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.card-jeanette h3 {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.card-jeanette p {
+    color: var(--paragraph-gray);
+}
+
+.card-jeanette h4 {
+    color: var(--paragraph-gray);
+}
+
+.card-kira h1 {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.card-kira h3 {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.card-kira p {
+    color: var(--paragraph-gray);
+}
+
+.card-kira h4 {
+    color: var(--paragraph-gray);
+}
+
+/* organizing names */
+
+.daniel-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.name-daniel {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.daniel-header {
+    margin-bottom: 20px;
+}
+
+.daniel-testimonial {
+    line-height: 1.3rem;
+}
+
+.jonathan-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.name-jonathan {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.jonathan-header {
+    margin-bottom: 20px;
+}
+
+.jonathan-testimonial {
+    line-height: 1.3rem;
+}
+
+.jeanette-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.name-jeanette {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.jeanette-header {
+    margin-bottom: 45px;
+}
+
+.jeanette-testimonial {
+    line-height: 1.3rem;
+}
+
+.patrick-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.name-patrick {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.patrick-header {
+    margin-bottom: 25px;
+}
+
+.patrick-testimonial {
+    line-height: 1.3rem;
+}
+
+.kira-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.name-kira {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.kira-header {
+    margin-bottom: 20px;
+}
+
+.kira-testimonial {
+    line-height: 1.3rem;
+}
+
+@media (max-width: 1100px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 80%;
+        margin: 40px 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
